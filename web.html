@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>index</title>
+</head>
+<body>
+  <h1>INDEX</h1>
+  <a href="https://www.baidu.com">跳转</a>
+  <img src=780.jfif></img>
+<video id="myVideo" width="320" height="240">
+    <source src="239e45f9cd0d9c58f81060c1250e90f3.mp4" type="video/mp4">
+    <!-- 添加视频的不同格式，以提高兼容性 -->
+    <source src="239e45f9cd0d9c58f81060c1250e90f3.webm" type="video/webm">
+    <source src="239e45f9cd0d9c58f81060c1250e90f3.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+  <button onclick="playPause()">播放/暂停</button>
+
+  <script>
+    var myVideo = document.getElementById("myVideo");
+
+    function playPause() {
+      if (myVideo.paused) {
+        myVideo.play();
+      } else {
+        myVideo.pause();
+      }
+    }
+  </script>
+</body>
+</html>
